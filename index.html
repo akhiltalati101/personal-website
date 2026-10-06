@@ -50,12 +50,26 @@
       <div class="container">
         <h2>About</h2>
         <p class="about-text">
-          I am a CS/BBA graduate from the University of Waterloo and Wilfrid Laurier University. My background spans
-          software development, finance, environment, and marketing — which lets me contribute across a wide
-          range of problems. Right now I'm building CRM tools for merchants at
-          <strong>Faire</strong>, after spending two and a half years building conversational AI infrastructure
-          at <strong>Replicant</strong>. Longer term, I'm most drawn to work at the intersection of computer
-          science and sustainability: technology that makes society more resource-efficient.
+          I'm a software engineer with a CS/BBA background (University of Waterloo and Wilfrid Laurier) who builds
+          backend and AI systems that hold up in production.
+        </p>
+        <p class="about-text">
+          Most recently at <strong>Faire</strong>, I worked on CRM infrastructure for a wholesale marketplace: an AI
+          assistant that cut campaign creation time by 45%, automations and marketing email pipelines reaching 500K+
+          messages a month, and abuse detection screening 100K+ customer interactions a week.
+        </p>
+        <p class="about-text">
+          Before that, at <strong>Replicant</strong>, I built LLM-powered tooling for conversational voice agents,
+          including a RAG-based GenAI Answers feature (Elasticsearch vector search) that cut time to market by 66%, and
+          a drag and drop agent builder that took development from 8 weeks to 2. My range across software, finance, and
+          marketing helps me connect technical decisions to business outcomes.
+        </p>
+        <p class="about-text">
+          What I care about most is sustainability. I want to work with people and organizations using computer science
+          and engineering to make society more resource-efficient. My start was environmental research, modelling
+          anaerobic digestion systems and working on smart toilets at IIT Gandhinagar. That led me to
+          <strong>Pani Energy</strong> for my third internship, where I built dashboarding and observability software
+          for water processing plants. I'm keen to bring what I've learned building AI systems back to that space.
         </p>
 
         <div class="interests">
@@ -78,19 +92,15 @@
           <article class="job job-featured">
             <div class="job-header">
               <h3>Software Engineer, <span class="job-company">Faire</span></h3>
-              <span class="job-period">Oct 2025 – Present</span>
+              <span class="job-period">Oct 2025 – Jun 2026</span>
             </div>
             <p class="job-location">Toronto, ON</p>
             <ul>
-              <li>Developed an AI-powered content generation assistant (Python, Kotlin) that drafts brand-authentic
-                customer outreach, reducing campaign creation time by 45%.</li>
-              <li>Led development of discount-enabled CRM automations across Promotions, Cart, Payments and Email,
-                powering 5K+ automated open-cart recovery emails.</li>
-              <li>Built a contextual retailer insights panel surfacing customer, order and cart info inline, cutting
-                redirects to the customer details page by 80%.</li>
-              <li>Standardized dynamic merge-tag infrastructure enabling real-time content substitution across 500K+
-                emails and messages.</li>
-              <li>Implemented automated abuse-detection systems screening 100K+ customer interactions weekly.</li>
+              <li>Developed and deployed an AI-powered content generation assistant (Python, Kotlin) that helps brands draft personalized campaigns from merchant stories and campaign history, reducing campaign creation time by 45%.</li>
+              <li>Led development of batch-based, discount-enabled CRM email automations across Promotions, Cart, Payments and Email systems, fetching structured retailer and cart data at send time to power 5K+ automated open-cart recovery emails monthly.</li>
+              <li>Standardized dynamic merge-tag infrastructure for personalized communications across email and messenger systems, enabling real-time content substitution across 500K+ emails and messages monthly.</li>
+              <li>Implemented automated abuse detection and security for CRM communications, screening 100K+ customer interactions weekly for suspicious links, attachments, and messaging activity.</li>
+              <li>Developed a contextual retailer insights panel surfacing customer, order and open cart information inline, reducing redirects to the customer details page by 80%.</li>
             </ul>
           </article>
 
@@ -101,16 +111,11 @@
             </div>
             <p class="job-location">Toronto, ON</p>
             <ul>
-              <li>Led end-to-end planning for a multi-layer PII redaction system, coordinating across Delivery,
-                Platform, and ML teams and unlocking deals exceeding $500K.</li>
-              <li>Developed a backend rules engine and matching frontend interface letting non-technical users build AI
-                agents visually, cutting development time 75% (8 → 2 weeks).</li>
-              <li>Built modular, LLM-driven data extraction components, lifting resolution rate 30% for voice
-                interactions.</li>
-              <li>Worked on GenAI Answers (LLMs, Elasticsearch, custom knowledge bases) for dynamic FAQ resolution,
-                cutting time to market 66% vs. a full AI Agent build.</li>
-              <li>Designed a bypass system to skip LLM processing for simple responses, reducing latency ~3s per turn
-                and cutting operational costs.</li>
+              <li>Developed GenAI Answers, a RAG system using LLMs and Elasticsearch as a vector database over custom knowledge bases for dynamic FAQ resolution, reducing time to market by 66% compared to a full AI Agent solution.</li>
+              <li>Led end-to-end planning and execution for a multi-layer PII redaction system, coordinating deliverables across Delivery, Platform, and ML teams and unlocking deals exceeding $500K.</li>
+              <li>Developed a backend rules engine (TypeScript, Node.js) and a matching frontend interface (React) that let non-technical users create AI agents visually, reducing development time by 75% (8 → 2 weeks).</li>
+              <li>Developed modular, LLM-driven components for intelligent data extraction, increasing the average resolution rate by 30% for collecting name, address, email, time, date, and phone numbers in voice interactions.</li>
+              <li>Designed and implemented a bypass system to circumvent LLM processing for simple user responses, reducing latency by 3 seconds per turn on average and improving cost efficiency at scale.</li>
             </ul>
           </article>
 
@@ -134,10 +139,8 @@
             </div>
             <p class="job-location">Ottawa, ON</p>
             <ul>
-              <li>Developed a Release Management application, JiraTool, using C# to automate the creation of Jira &amp;
-                Confluence items, saving 3 developer hours per release.</li>
-              <li>Implemented Jenkins build automation features including VM state storage on build failure.</li>
-              <li>Performed security scanning and bug fixes across various projects using SonarQube.</li>
+              <li>Built PowerShell-based Jenkins CI/CD automation that captured and preserved the VM's state on build failure for debugging, reducing average time to resolve build failures by 1 hour.</li>
+              <li>Developed a C# desktop tool integrating with Jira and Confluence APIs to auto-generate pre-filled templates and file them into the correct project structure, eliminating manual setup and saving 3 hours per agile project.</li>
             </ul>
           </article>
 
@@ -148,14 +151,8 @@
             </div>
             <p class="job-location">Montreal, QC</p>
             <ul>
-              <li>Developed and deployed an orchestrator platform (Elixir/Phoenix) acting as an intermediary between the
-                bank's chat widget and chatbot service, routing queries to RASA and managing instance load.</li>
-              <li>Developed dashboards using Datadog and telemetry events to track orchestrator platform performance,
-                reducing troubleshooting time from hours to minutes.</li>
-              <li>Implemented a pre-commit framework across repositories with large contributor bases to improve pull
-                request quality and speed.</li>
-              <li>Improved the chatbot's UI for accessibility and implemented unit tests using Enzyme for new and
-                existing code.</li>
+              <li>Developed and deployed an orchestrator platform (Elixir/Phoenix) that routed chatbot widget queries to RASA and managed RASA instance load.</li>
+              <li>Built observability dashboards with Datadog integration and telemetry event tracking, providing stakeholders with real-time platform performance metrics and reducing troubleshooting time from hours to minutes.</li>
             </ul>
           </article>
 
@@ -166,14 +163,8 @@
             </div>
             <p class="job-location">Victoria, BC</p>
             <ul>
-              <li>Developed and deployed a serverless application, "Productized Dashboards," enabling fully customized
-                dashboards for clients.</li>
-              <li>Built using a React-Redux frontend, Python backend, and PostgreSQL; replaced the old YAML file
-                implementation, increasing build-time efficiency by 75%.</li>
-              <li>Conducted GUI &amp; API testing using Enzyme and Postman on new and existing code for debugging and
-                isolating areas for improvement.</li>
-              <li>Collaborated with the R&amp;D department to chart future avenues for making data processing tools more
-                accurate.</li>
+              <li>Developed and deployed Productized Dashboards (React, Python, PostgreSQL) that enabled non-power users to create custom dashboards using UI tools, increasing build-time efficiency by 75%.</li>
+              <li>Conducted GUI &amp; API testing using Enzyme and Postman for new and existing code, focusing on debugging and isolating areas for improvement.</li>
             </ul>
           </article>
 
