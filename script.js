@@ -24,11 +24,11 @@ async function loadRepos() {
     if (!listRes.ok) throw new Error(`Could not load projects.json (${listRes.status})`);
     const allowlist = await listRes.json();
 
-    if (!allowlist.length) {
-      document.getElementById('projects').hidden = true;
-      document.querySelectorAll('a[href="#projects"]').forEach((link) => (link.hidden = true));
-      return;
-    }
+    // The Projects section and its nav link are hidden in the HTML by default;
+    // only reveal them when there are repos to show.
+    if (!allowlist.length) return;
+    document.getElementById('projects').hidden = false;
+    document.querySelectorAll('a[href="#projects"]').forEach((link) => (link.hidden = false));
 
     const results = await Promise.all(
       allowlist.map(async (repoName) => {
