@@ -293,3 +293,6 @@ a:hover { text-decoration: underline; }
   .nav-links.open { display: flex; }
   .hero { padding: 64px 0 48px; }
 }
+
+/* Ensure the hidden attribute always wins over display rules */
+[hidden] { display: none !important; }

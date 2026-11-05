@@ -25,7 +25,8 @@ async function loadRepos() {
     const allowlist = await listRes.json();
 
     if (!allowlist.length) {
-      status.textContent = 'No projects listed yet — add repo names to projects.json.';
+      document.getElementById('projects').hidden = true;
+      document.querySelectorAll('a[href="#projects"]').forEach((link) => (link.hidden = true));
       return;
     }
 
